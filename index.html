@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon.png">
+    <title>Hacker Interface</title>
+
+    <!-- Link đến thư viện FontAwesome và các file-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1><span class="download-icon"><i class="fas fa-terminal"></i></span> Hacker Interface</h1>
+    <div class="code-block">
+        <p>Running decryption algorithm...</p>
+        <p>Access granted.</p>
+        <p>Data downloaded successfully.</p>
+    </div>
+    <div class="console">
+        <div class="console-text">
+            > Initiating hack sequence...
+            <br>> Running exploit code...
+            <br>> Accessing mainframe...
+            <br>> Downloading confidential data...
+        </div>
+        <div  id="consoleText" class="console-text">
+        </div>
+        
+    </div>
+    <div id="hack_fn" style="display: none;">
+        Hack successful!
+    </div>
+    <a href="#" onclick="hackFile() & startProgress()" class="code-btn" id="btn_hackfile">
+        <i class="fas fa-code download-icon"></i>Hack File
+    </a>
+    <a href="SSL101C_Key.rar" id="downloadBtn" class="download-btn" onclick="downloadFile()">
+        <i class="fas fa-download download-icon"></i>Download File
+    </a>
+    <div id="loading" class="loading">Downloading...</div>
+    <div class="progress-container">
+        <div class="progress-bar" id="pb"  style="display: none;">0%</div>
+    </div>
+</body>
+</html>
