@@ -18,11 +18,11 @@ function hackFile() {
     document.getElementById('consoleText').innerHTML += "<br>> Accessing mainframe... ";
 
     // Hiệu ứng nhiều file chạy tùm lum (nhanh hơn và khác nhau)
-    for (let i = 0; i < 80; i++) {
+    for (let i = 0; i < 20; i++) {
         setTimeout(function () {
             let fileType = Math.random() > 0.5 ? "exe" : "dll";
             document.getElementById('consoleText').innerHTML = `<br>>` + generateRandomFileName(Math.floor(Math.random() * 30) + 10) + `.${fileType}...`;
-        }, i * 50);
+        }, i * 100);
     }
 
 }
